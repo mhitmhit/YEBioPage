@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <title> Yassine Elkabaili Portfolio</title>
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
@@ -14,9 +14,9 @@
             </div>
             <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-                    <li><a href="index.html#resume">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html#projects">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
             </ul>
             </div>
             <span class="navTrigger">
@@ -26,52 +26,88 @@
             </span>
     </div>
 </nav>
-<section class="home">
+<section class="homePortfolio">
 </section>
-
-
-
-
-
-<section id="projects">
-	<article>
-		<div class="thumbnail th-1"></div>
-		<div class="content">
-			<h2 class="project-tile">
-				<span class="background-wrapper">
-					Project<span></span>
-				</span> One
-			</h2>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-			<div class="skills">
-				<div>Tools</div>
-				<span>HTML5</span><span>Sass</span><span>CSS3</span><span>Babel</span><span>ES6</span><span>JavaScript</span><span>Gulp</span><span>Node</span>
-			</div>
-			<a href="#" class="button">View Project</a>
+<!-- Projects section ************************************************** -->
+<br id="projects"/>
+<div class="projects">
+	<div class="projects_left">
+		<div class="projects_profile">
+			<img src="./images/planningBoard2.jpg" alt="profile_pic2" >
+		  </div>
+	</div>
+	<div class="projects_right">
+		<div class="projects_item projects_about">
+			<div class="title">
+			   <p class="bold">Yassine BIO/Portfolio</p>
+			 </div>
+			<p>My personal BIO page and a link to my development projects. This is my first project while following the AppAcademy Curriculum. Requirement of the project was to create a simple web Page purely with HTML and CSS.
+				the webpage is to contain the main HTML elements (img, links, span....) and to be styled with purely CSS.
+			</p>
 		</div>
-	</article>
-	<article>
-		<div class="thumbnail th-2"></div>
-		<div class="content">
-			<h2 class="project-tile">
-				<span class="background-wrapper">
-					Project<span></span>
-				</span> Two
-			</h2>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-			<div class="skills">
-				<div>Tools</div>
-				<span>HTML5</span><span>Sass</span><span>CSS3</span><span>Babel</span><span>ES6</span><span>JavaScript</span><span>Gulp</span><span>Node</span>
-			</div>
-			<a href="#" class="button">View Project</a>
+	</div>
+</div>
+<div class="projects">
+	<div class="projects_right">
+		<div class="projects_item projects_about">
+			<div class="title">
+			   <p class="bold">Project 2</p>
+			 </div>
+			<p>Jasdfj a;lskjd;flakjsd;lfl;ajsdjf ;aklsjdl;kfja;lejpijasl;kdjvl;knal;kdjg;aqjewlkjf;laksjdf;klaj  al;ksdjioqewjrkgjalkjdfs; g </p>
 		</div>
-	</article>
-</section>
+	</div>
+	<div class="projects_left">
+		<div class="projects_profile">
+			<img src="./images/mountainTop.jpg" alt="profile_pic2" >
+		  </div>
+	</div>
+</div>
+<div class="projects">
+	<div class="projects_right">
+		<div class="projects_item projects_about">
+			<div class="title">
+			   <p class="bold">Project 2</p>
+			 </div>
+			<p>Jasdfj a;lskjd;flakjsd;lfl;ajsdjf ;aklsjdl;kfja;lejpijasl;kdjvl;knal;kdjg;aqjewlkjf;laksjdf;klaj  al;ksdjioqewjrkgjalkjdfs; g </p>
+		</div>
+	</div>
+	<div class="projects_left">
+		<div class="projects_profile">
+			<img src="./images/mountainTop.jpg" alt="profile_pic2" >
+		  </div>
+	</div>
+</div>
+<div class="projects">
+	<div class="projects_right">
+		<div class="projects_item projects_about">
+			<div class="title">
+			   <p class="bold">Project 2</p>
+			 </div>
+			<p>Jasdfj a;lskjd;flakjsd;lfl;ajsdjf ;aklsjdl;kfja;lejpijasl;kdjvl;knal;kdjg;aqjewlkjf;laksjdf;klaj  al;ksdjioqewjrkgjalkjdfs; g </p>
+		</div>
+	</div>
+	<div class="projects_left">
+		<div class="projects_profile">
+			<img src="./images/mountainTop.jpg" alt="profile_pic2" >
+		  </div>
+	</div>
+</div>
 
+<!-- Jquery needed  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
 
-
-
-
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
 
 </body>
 </html>
