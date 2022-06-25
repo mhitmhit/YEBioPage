@@ -409,7 +409,7 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  background: #4CAF50;
+  background: rgb(160, 160, 160);
 }
 
 /* .container {
@@ -420,8 +420,8 @@ body {
 } */
 
 .container2 {
-    max-width: 400px;
-    width: 100%;
+    max-width: 600px;
+    width: 200%;
     margin: auto;
 }
 
